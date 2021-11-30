@@ -539,3 +539,39 @@ footer p a {
     width: 450px;
   } */
 }
+
+/* tags page  */
+
+.tags-wrapper {
+  display: grid;
+  text-align: center;
+  gap: 2rem;
+}
+.tag {
+  background-color: var(--gray-400);
+  border-radius: var(--borderRadius);
+  padding: 1rem 0;
+  transition: var(--transition);
+  color: var(--white);
+}
+.tag:hover {
+  background-color: var(--primary-500);
+}
+
+.tag p,
+.tag h5 {
+  margin-bottom: 0;
+}
+
+/* midlle screen 576px-992px */
+@media (min-width: 576px) {
+  .tags-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* tags screen width > 992px */
+@media (min-width: 992px) {
+  .tags-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
