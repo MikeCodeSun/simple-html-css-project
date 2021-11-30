@@ -353,6 +353,7 @@ main
   max-width: var(--max-width);
   min-height: calc(100vh - (6rem + 4rem));
   margin: 0 auto;
+  padding-top: 2rem;
 }
 /* 
 ========
@@ -375,4 +376,31 @@ footer p {
 .footer-logo,
 footer p a {
   color: var(--primary-500);
+}
+
+/* main page hero section */
+.hero {
+  height: 40vh;
+  background: url("../asset/run/run-hero.jpeg") center/cover no-repeat;
+  border-radius: var(--borderRadius);
+  margin-bottom: 2rem;
+}
+
+.hero-container {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--borderRadius);
+}
+.hero-text {
+  color: white;
+  text-align: center;
+}
+/* hero @ big screen > 768px */
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 4rem;
+  }
 }
