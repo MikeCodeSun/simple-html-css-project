@@ -518,3 +518,24 @@ footer p a {
     height: 100%;
   }
 }
+
+/* contact page */
+.contact-page {
+  display: grid;
+  gap: 2rem 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact-form {
+  width: 100%;
+}
+/* contact page big screen width> 778px*/
+@media (min-width: 778px) {
+  .contact-page {
+    grid-template-columns: 1fr 450px;
+    align-items: center;
+  }
+  /* .contact-form {
+    width: 450px;
+  } */
+}
